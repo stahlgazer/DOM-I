@@ -86,3 +86,20 @@ contactText[7].textContent = siteContent["contact"]['email'];
 
 let footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright'];
+
+links[0].style.color = 'green';
+links[1].style.color = 'green';
+links[2].style.color = 'green';
+links[3].style.color = 'green';
+links[4].style.color = 'green';
+links[5].style.color = 'green';
+
+const newListItem = document.createElement('a');
+newListItem.textContent = "FAQ"
+const parentElement = document.querySelector('nav');
+parentElement.append(newListItem) 
+
+const newListItem2 = document.createElement('a');
+newListItem2.textContent = "Home"
+const parentElement2 = document.querySelector('nav');
+parentElement2.prepend(newListItem2) 
